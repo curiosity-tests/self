@@ -31,11 +31,6 @@ on:
           - staging
           - production
         default: staging
-  schedule:
-    # Friday 17:00 UTC (see timezone conversions above) to prepare the weekend staging PR.
-    - cron: "0 17 * * 5"
-    # Sunday 17:00 UTC (same times as above) to prepare the production release PR.
-    - cron: "0 17 * * 0"
 
 jobs:
   release_to_staging:
